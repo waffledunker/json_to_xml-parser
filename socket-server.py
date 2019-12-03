@@ -179,7 +179,7 @@ def list_to_string_after_regex(only_json_data):
 
 
 
-# scape json data from html body as list
+# regex json data from html body as list
 
 def regex_test(data):
 
@@ -202,8 +202,10 @@ def api_caller(tomconn_post_data,dest_url,api_key):
                         logging.debug("data is resend as xml to desired url")
         except HTTPError as he:
                 print(f'HTTP error occured: {he}')
+                logging.debug(f'HTTP error occured: {he}')
         except Exception as err:
                 print(f'other type of error occured: {err}')
+                logging.debug(f'Other type error occured: {err}')
 
 
 #RUNNING FUNCTIONS
