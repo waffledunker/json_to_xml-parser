@@ -1,10 +1,18 @@
 # json_to_xml-parser with sockets
-Converting post request(or any type of json stream) JSON values to XML and resending(post request) to desired url with python3
+Converting post request(or any type of json datastream) JSON values to XML and resending(post request) to desired url with python3
 
-
-Creating socket-server and listening desired port to recieve data.
-Then parse received JSON data to XML
-Finally send your xml as HTML POST to desired location.
+-This program made for grafana webhook data listening and converting it to xml format and sending it to API. But can change required fields and use it for anything.
+-Creating socket-server and listening desired port to recieve data.
+-Then parse received JSON data to XML
+-Finally send your xml as HTML POST to desired location.
+-copy  ".service" file under to /lib/systemd/system directory to use this as a service(rhel based)
+-use following commands to start program as a service(rhel based)
+ #systemctl daemon-reload
+ #systemctl enable socket-server.service 
+ #systemctl start socket-server.service
+ 
+ 
+ 
 
 
 -> Still needs fixes and optimizations
