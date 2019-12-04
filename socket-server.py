@@ -80,7 +80,7 @@ port = 50013
 
  
 
-host = '' # convert this to localhost to outline outsiders
+host = '<_host_that_you_listen_to>' # convert this to localhost to outline outsiders
 
  
 
@@ -92,7 +92,7 @@ tomconn_post_data = '' # final data holder, using this variable to resend final 
 
  
 
-dest_url = 'http://wap02tomconn.int.teb.com.tr:30005/bsmc/rest/events/zoom/' # desired final url
+dest_url = '<destination_host_to_forward_data>' # desired final url
 
  
 
