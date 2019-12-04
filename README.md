@@ -6,7 +6,7 @@ Converting post request(or any type of json datastream) JSON values to XML and r
 -Then parse received JSON data to XML
 -Finally send your xml as HTML POST to desired location.
 -copy  ".service" file under to /lib/systemd/system directory to use this as a service(rhel based)
--use following commands to start program as a service(rhel based)
+-use following commands to start program as a service after copying service file to destination(rhel based)
  #systemctl daemon-reload
  #systemctl enable socket-server.service 
  #systemctl start socket-server.service
