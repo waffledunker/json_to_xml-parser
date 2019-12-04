@@ -1,7 +1,7 @@
 # json_to_xml-parser with sockets
 Converting post request(or any type of json datastream) JSON values to XML and resending(post request) to desired url with python3
 
--This program made for grafana webhook data listening and converting it to xml format and sending it to API. But can change required fields and use it for anything.
+-This program made for GRAFANA WEBHOOK data listening and converting it to xml format and sending it to API. You may encounter some grafana named things and this is the reason why. But you can change required fields and use it for anything.
 -Creating socket-server and listening desired port to recieve data.
 -Then parse received JSON data to XML
 -Finally send your xml as HTML POST to desired location.
