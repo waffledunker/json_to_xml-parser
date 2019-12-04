@@ -1,0 +1,31 @@
+[Unit]
+
+Description=Socket-Server service 
+
+After=network.target
+
+StartLimitIntervalSec=20
+
+ 
+
+ 
+
+[Service]
+
+Type=simple
+
+Restart=always
+
+RestartSec=10
+
+User=root
+
+ExecStart=/your-directory/goes-here/socket-service.py
+
+ExecStop=/bin/kill -SIGTERM $MAINPID
+
+ 
+
+[Install]
+
+WantedBy=multi-user.target
